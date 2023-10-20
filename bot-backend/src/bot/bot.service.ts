@@ -11,7 +11,12 @@ export class BotService {
      users:any;
     private readonly bot:any;
 constructor(private readonly adminService:AdminService,private readonly userServive:UsersService){
+  try{
+
     this. bot = new TelegramBot(process.env.TELEGRAM_API_KEY, {polling: true});
+  }catch(err){
+    console.log(err)
+  }
   
 
     this.Register();
