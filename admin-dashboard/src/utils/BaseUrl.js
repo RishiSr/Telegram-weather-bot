@@ -1,2 +1,2 @@
-const BaseUrl = "http://localhost:3000"
+const BaseUrl = "https://weather-telegram-bot-rishi.onrender.com/"
 export default BaseUrl
