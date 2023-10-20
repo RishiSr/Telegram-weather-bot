@@ -29,7 +29,7 @@ constructor(private readonly adminService:AdminService,private readonly userServ
       })
 
 
-      cron.schedule('54 19 * * *', () => {
+      cron.schedule('00 9 * * *', () => {
         console.log("sending update");
            
       this.getAll();
